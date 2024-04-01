@@ -1,0 +1,96 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.historique{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 10vh 0;
+}
+
+.titre{
+  text-align: center;
+  margin: 3vh 0;
+
+}
+
+table{
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th{
+  border-bottom: 2px solid var(--4color);
+}
+
+th,
+td{
+  padding: 1vh 1vw;
+}
+
+.td_nb_billet{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div_trashbin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trashbin,
+.td_nb_billet div{
+  border-radius: 25px;
+  height: 4vh;
+  width: 4vh;
+  background-color: var(--4color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.empty{
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.section_prix{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.section_mont{
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.section_prix button{
+  width: 20vh;
+  height: 100%;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: var(--4color);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.section_prix button:hover{
+  background-color: var(--3color);
+}

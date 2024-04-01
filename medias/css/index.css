@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary: #2B90C8;
+  --2color: #51A1CE;
+  --3color: #9FC0DF;
+  --4color: #C8D5E8;
+  --background: #E7EDF0;
+  --background2: #F5F6F7;
+  --dark: #444750;
+  --text: #393939;
+
+  --notif: #F57600;
+}
+
+.big-text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.normal-text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* Formulaire d'itineraire */
+
+.research form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 46.5vh;
+}
+
+/* Titre "Où souhaitez-vous ... */
+
+.title_center {
+  text-align: center;
+  margin-bottom: -8vh;
+}
+
+/* Barre itineraire */
+
+#departarrivee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9FC0DF;
+  padding: 0.5vh 0.5vw;
+  border-radius: 25px;
+}
+
+#departarrivee div {
+  display: flex;
+  align-items: center;
+  background: #F5F6F7;
+  padding: 0.5vh 0.5vw;
+  border-radius: 25px;
+  margin: 0.3vh 0.3vw;
+}
+
+#exchange {
+  height: 3vh;
+  width: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+}
+
+#arrivee svg,
+#depart svg {
+  margin-right: 1vw;
+  border: none;
+}
+
+.search_top div input {
+  border: none;
+  background-color: #F5F6F7;
+  border-radius: 25px;
+  font-size: small;
+}
+
+#search:hover {
+  transform: scale(1.05);
+}
+
+#rechercher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vh;
+}
+
+#rechercher button {
+  background-color: #F5F6F7;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0.5vh 0.5vw;
+  font-size: small;
+}
+
+#rechercher button img {
+  height: 3vh;
+  width: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+.search_top div input:focus {
+  outline: none;
+}
+
+/* Choix de navigation */
+
+.choix_navigation {
+  display: flex;
+  position: relative;
+}
+
+.choix_navigation > div {
+  flex-basis: 33.3%;
+  position: relative;
+  height: 25vh;
+}
+
+.choix_navigation > div > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.choix_navigation > div > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: var(--background);
+  font-size: 3vw;
+}
+
+.choix_navigation > div:nth-child(2) > h1 {
+  top: 45%;
+}
+
+/* Offres */
+
+.container_abonnements {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  flex-wrap: wrap;
+  width: 68vw;
+  margin: 0 auto;
+}
+
+.meilleures_offres_titre {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  font-size: 2vw;
+}
+
+.meilleures_offres{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+.container_abonnements > article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 25px;
+  margin: 2vh;
+}
+
+.container_abonnements > article > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 7vh;
+  width: 17.5vw;
+  font-size: 1vw;
+}
+
+.container_abonnements > article > div > img {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Dernieres news */
+
+.news > h1 {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  font-size: 2vw;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dernieres_actualites {
+  display: flex;
+  padding: 3vh;
+  background-color: white;
+  border-radius: 25px;
+  width: 80vw;
+}
+
+
+.dernieres_actualites > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2vw;
+  font-size: 1vw;
+}
+
+.dernieres_actualites > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dernieres_actualites > div > img {
+  width: 25vw;
+  height: 25vh;
+  border-radius: 25px;
+}
+
+
+/* A propos de nous */
+
+
+.apropos > h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  font-size: 2vw;
+}
+
+.apropos > section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.apropos > section > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 4vh;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.apropos > section > article > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  text-align: center;
+  font-size: 1.1vw;
+}
+
+.apropos > section > article > div > img  {
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  object-fit: cover;
+  width: 100%;
+  height: 8vh;
+}
+
+@media screen and (max-width: 450px) {
+  
+  /* Dernières actualités */
+  
+  .dernieres_actualites {
+    flex-direction: column;
+  }
+
+  .dernieres_actualites > div > img {
+    width: 70vw;
+    height: 15vh;
+    margin-bottom: 1vh;
+    border-radius: 25px;
+  }
+
+  .dernieres_actualites > div:nth-child(2) {
+    font-size: 3vw;
+  }
+
+  .news > h1 {
+    font-size: 6vw;
+  }
+  
+  /* A propos de nous */
+
+  .apropos > h1 {
+    font-size: 6vw;
+  }
+
+  .apropos > section {
+    flex-direction: column;
+  }
+
+  .apropos > section > article > div {
+    width: 70vw;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  /* Meilleures offres */ 
+  
+  .meilleures_offres_titre {
+    font-size: 6vw;
+  }
+  
+  .container_abonnements > article > div {
+    height: 8vh;
+    width: 60vw;
+    font-size: 3.5vw;
+    flex-direction: column;
+  }
+
+  /* Choix navigation */ 
+  
+  .choix_navigation > div {
+    height: 15vh;
+  }
+  
+  .choix_navigation > div > h1 {
+    font-size: 6vw;
+  }
+
+  /* Barre itineraire */
+
+#departarrivee {
+  width: 90vw;
+}
+
+#depart > input, #arrivee > input {
+  width: 32vw;
+} 
+
+.title_center {
+  font-size: 5vw;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+  
+  /* Dernières actualités */
+  
+  .dernieres_actualites {
+    flex-direction: column;
+  }
+
+  .dernieres_actualites > div > img {
+    width: 70vw;
+    height: 15vh;
+    margin-bottom: 1vh;
+    border-radius: 25px;
+  }
+
+  .dernieres_actualites > div:nth-child(2) {
+    font-size: 3vw;
+  }
+
+  .news > h1 {
+    font-size: 6vw;
+  }
+  
+  /* A propos de nous */
+
+  .apropos > h1 {
+    font-size: 6vw;
+  }
+
+  .apropos > section {
+    flex-direction: column;
+  }
+
+  .apropos > section > article > div {
+    width: 70vw;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  /* Meilleures offres */ 
+  
+  .meilleures_offres_titre {
+    font-size: 6vw;
+  }
+  
+  .container_abonnements > article > div {
+    height: 8vh;
+    width: 60vw;
+    font-size: 3.5vw;
+    flex-direction: column;
+  }
+
+  /* Choix navigation */ 
+  
+  .choix_navigation > div {
+    height: 15vh;
+  }
+  
+  .choix_navigation > div > h1 {
+    font-size: 6vw;
+  }
+
+  /* Barre itineraire */
+
+#departarrivee {
+  width: 90vw;
+}
+
+#depart > input, #arrivee > input {
+  width: 32vw;
+} 
+
+.title_center {
+  font-size: 5vw;
+}
+
+}

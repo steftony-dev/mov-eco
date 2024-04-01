@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary: #2B90C8;
+  --2color: #51A1CE;
+  --3color: #9FC0DF;
+  --4color: #C8D5E8;
+  --background: #E7EDF0;
+  --background2: #F5F6F7;
+  --dark: #444750;
+  --text: #393939;
+
+  --notif: #F57600;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.se_connecter img{
+    width: 10vw;
+    height: 20vh;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+    background-color:var(--4color);
+    border-radius: 25px;
+}
+
+fieldset{
+    border: none;
+}
+
+form fieldset input[type="email"],input[type="password"]{
+    display: flex;
+    height: 4vh;
+    width: 22vw;
+    padding: 1vh 1vw;
+    outline: none
+}
+
+#seconnecter {
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input{
+    border-radius: 25px;
+    border: solid;
+    border-color: var(--2color);
+}
+
+input::placeholder {
+    text-indent: 1vh;
+}
+
+.connexion {
+    background-color: var(--3color);
+    border: var(--2color);
+    border-radius: 7.5px;
+    height: 4vh;
+    width: 8vw;
+    font-size: 2vh;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#erreur{
+    font-size: 1.5vh;
+    line-height: 1vh;
+    padding-bottom: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.co_insc {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .left div {
+    margin-right: 3vh;
+  }
+  
+  footer .right a {
+    margin-right: 3vh;
+  }
+
+  @media screen and (max-width: 1250px) { 
+
+    form{
+        width: 50vw;
+    }
+
+    form fieldset {
+        display: flex;
+        width: 40vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form fieldset input[type="email"],input[type="password"]{
+        width: 30vw;
+    }
+
+    #seconnecter {
+        font-size: 3vw;
+    }
+
+    .se_connecter img{
+        width: 20vw;
+        height: 20vh;
+    }
+
+    .connexion {
+        width: 15vw;
+    }
+
+    main{
+        height: 93%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 750px) { 
+
+    form{
+        width: 70vw;
+    }
+
+    form fieldset {
+        display: flex;
+        width: 40vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form fieldset input[type="email"],input[type="password"]{
+        width: 60vw;
+    }
+
+    #seconnecter {
+        font-size: 5vw;
+    }
+
+    .se_connecter img{
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .connexion {
+        width: 25vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        height: 85%;
+    }
+
+  }

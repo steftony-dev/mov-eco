@@ -1,0 +1,313 @@
+.research {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.research form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 46.5vh;
+}
+
+.departarrivee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9FC0DF;
+  padding: 0.5vh 0.5vw;
+  border-radius: 25px;
+}
+
+.departarrivee div {
+  display: flex;
+  align-items: center;
+  background: #F5F6F7;
+  padding: 0.5vh 0.5vw;
+  border-radius: 25px;
+  margin: 0.3vh 0.3vw;
+}
+
+#exchange {
+  height: 3vh;
+  width: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+}
+
+#arrivee > svg,
+#depart > svg {
+  margin-right: 1vw;
+  border: none;
+}
+
+
+.search_top div input {
+  border: none;
+  background-color: #F5F6F7;
+  border-radius: 25px;
+  font-size: small;
+}
+
+#rechercher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vh;
+}
+
+#rechercher button {
+  background-color: #F5F6F7;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0.5vh 0.5vw;
+  font-size: small;
+}
+
+#rechercher button img {
+  height: 3vh;
+  width: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+.search_top div input:focus {
+  outline: none;
+}
+
+.heure_depart_arrive {
+  display: flex;
+}
+
+.heure_depart_arrive section {
+  display: flex;
+}
+
+.heure_depart_arrive {
+  width: 100%;
+  display: flex;
+}
+
+.dateheure {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dateheure p{
+  margin-right: 15px;
+}
+
+.date{
+  margin-right: 7px;
+}
+
+.date,
+.heure{
+  display: flex;
+  align-items: center;
+}
+
+.date label,
+.heure label{
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.arrivee,
+.depart {
+  display: flex;
+  align-items: center;
+  background-color: #9FC0DF;
+  padding: 0.5vh 0.5vw;
+  border-radius: 25px;
+}
+
+.depart div,
+.arrivee div {
+  border: none;
+  background-color: #F5F6F7;
+  border-radius: 25px;
+  font-size: small;
+  padding: 0.5vh 0.5vw;
+  margin: 0.3vh 0.3vw;
+}
+
+.abo_promo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search,
+.abo_promo button{
+  margin: 1vh 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 1vh 1vw;
+  border: none;
+  outline: none;
+  transition: .5s;
+  background-color: white;
+}
+
+#search:hover,
+.abo_promo button:hover{
+  transform: scale(1.05);
+}
+
+/* Liste des Itinéraires */
+
+.boxaccordion{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+  width: 80%;
+  transition: all .5s;
+  overflow: auto;
+  padding: 5vh 0 5vh;
+}
+
+.titre_cat{
+  margin: 1vh;
+  color: white;
+  display: flex;
+  align-items: center; 
+}   
+
+.titre_cat h2{
+  margin-right: 2vh;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 1vh;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 0, 50, 0.2);
+}
+
+.arrow{
+  height: 3vh;
+  width: 3vw;
+  transform: rotate(0deg);
+  transition: transform .5s ease-in-out;
+}
+
+.quest{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+.quest:hover{
+  transform: scale(1.05);
+}
+
+.quest h2{
+  text-align: center;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 600;
+}
+
+.itinéraire-bottom,
+.itinéraire-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itinéraire-top {
+  border-bottom: 1px solid black;
+}
+
+.itinéraire-top button{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1vh 1vw;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: var(--4color);
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.itinéraire-top button:hover{
+  background-color: var(--3color);
+}
+
+.itinéraire-bottom{
+  padding: 1vh;
+}
+
+.heighter {
+  height: 3000px;
+}
+
+.modal {
+  display: none;
+}
+.modal-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba( 0, 0, 0, .25 )
+}
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 25px;
+  background: white;
+  border-radius: 25px;
+  transform: translate(-50%, -50%)
+}
+
+#loader {
+    position: absolute;
+    left: 52%;
+    top: 75%;
+    z-index: 1;
+    width: 5em;
+    height: 5em;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #9FC0DF;
+    border-bottom: 16px solid #9FC0DF;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
